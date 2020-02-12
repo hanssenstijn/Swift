@@ -1,0 +1,36 @@
+let b = 10
+var a = 5
+a = b
+
+let (x,y) = (1,2)
+
+// - minus operator
+let minusThree = -minusThree
+
+2 != 1
+1 >= 2
+
+// if statement
+let name = "world"
+if name == "world" {
+	print("hello, world")
+} else {
+	print("Im sorry \(name), but i dont recognize you")
+}
+
+// ? operator
+let contentHeight = 40
+let hasHeader = true
+let rowHeight = contentHeight + (hasHeader ? 50 : 20)
+
+// nil-coalescing: unwraps an optional a if it contains a value or returns a default value b if a is nil
+let defaultColorName = "red"
+var userDefinedColorName: String? // defaults to nil
+	
+var colorNameToUse = userDefinedColorName ?? defaultColorName
+
+// closed range operators (a...b)
+for index in 1...5 {
+	print("\(index) times 5 is \(index * 5)")
+}
+
